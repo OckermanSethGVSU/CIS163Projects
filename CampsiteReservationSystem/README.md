@@ -1,2 +1,1 @@
-This is a Campsite Reservation System frontend GUI and underlying backend code. It is built on an ArrayList and features a variety of different
-sorting options usings streams, lambdas, and anonymous classes. 
+Two different versions of the front end and back end for a campsite reservation system. One was built using an arrayList and focuses on adding different features and catching potential user errors. The other is built on a linked list and focuses on efficiency and an exersise in switching data structures. 
