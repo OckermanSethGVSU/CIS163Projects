@@ -72,7 +72,8 @@ public class ListModel extends AbstractTableModel {
     }
 
     /**
-     * Constructor that max is messing with
+     * Constructor of list model that allows you to pass in an int
+     * @param i the int to be passed in
      */
     public ListModel(int i) {
         super();
@@ -102,7 +103,7 @@ public class ListModel extends AbstractTableModel {
         UpdateScreen();
     }
     /*
-    * I honestly don't know what this does yet besides the name updateScreen
+    * Updates listModel to match the screen
      */
     private void UpdateScreen() {
 
@@ -263,7 +264,7 @@ public class ListModel extends AbstractTableModel {
     }
 
     /**
-     * Unclear. I believe it gets the object at the coordinates
+     * Gets value from the listModel at coordinates
      * @param row the row of the object you want
      * @param col the column of the object you want
      * @return the object at the coordinates
@@ -287,6 +288,8 @@ public class ListModel extends AbstractTableModel {
 
     /*
     * Table model setup for currentParkScreen
+    * @param the row that you want the object from
+    * @param the col that you want the object from
      */
     private Object currentParkScreen(int row, int col) {
         switch (col) {
@@ -522,13 +525,7 @@ public class ListModel extends AbstractTableModel {
 
         }
     }
-    // attempt 1
-    public String saveTextRep() throws IOException {
-        String first = listCampSites.get(0).toString();
-        return first;
-
-    }
-
+    
     /**
      * loads the campsites from a file
      * @param filename the name of the file you want loaded
