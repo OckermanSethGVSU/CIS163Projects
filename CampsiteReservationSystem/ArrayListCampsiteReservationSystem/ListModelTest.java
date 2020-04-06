@@ -327,7 +327,7 @@ public class ListModelTest {
     /**
      * testing invalid numTenters
      */
-    /*@Test
+    @Test
     public void invalidNumTenters() {
         ListModel DList = new ListModel();
         GregorianCalendar g1 = new GregorianCalendar(2020, Calendar.MARCH, 16);
@@ -337,5 +337,5 @@ public class ListModelTest {
         assertEquals(8, DList.getRowCount());
         DList.add(tent);
         assertEquals(8, DList.getRowCount());
-    }*/
+    }
 }
