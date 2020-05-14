@@ -427,7 +427,7 @@ public class ChangeJar {
                 this.subtract(temp);
                 return this;
             } else {
-                return null;
+                throw new IllegalArgumentException("Negative result from subtraction or no possible combo");
             }
         }
         else{
